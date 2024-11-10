@@ -1,0 +1,212 @@
+/* 컨테이너 배경 및 기본 색상 설정 */
+.ReservationList_Find_Div {
+    text-align: center;     /* 텍스트 가운데 정렬 */
+    vertical-align: center; /* 세로 가운데 정렬 */
+    border: 1px black;    /* 선 */
+    border-radius: 10px;    /* 선 둥근모서리 */
+    background: rgba(0, 0, 0, 0.8); /* 배경색 */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), inset 0 0 20px rgba(255, 0, 0, 0.7);   /* 박스 스타일 */
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px;
+}
+.ReservationList_Find_Div h1 {
+    color: #c30404;
+    text-shadow: 0 0 10px rgba(212, 28, 28, 0.7), 0 0 20px rgba(212, 28, 28, 0.5), 0 0 30px #ff0000, 0 0 40px #ff0000;
+    font-size: 3em;
+    letter-spacing: 5px;
+    animation: ghost 3s infinite;
+    transition: color 0.1s ease;
+}
+
+/* 테이블의 타이틀 영역 */
+.ReservationList_Title_Find_Table {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.ReservationList_Title_Find_Table th:nth-child(1) { width: 20%; }
+.ReservationList_Title_Find_Table th:nth-child(2) { width: 25%; }
+.ReservationList_Title_Find_Table th:nth-child(3) { width: 25%; }
+
+.ReservationList_Title_Find_Table th {
+    font-size: 1.4em;
+    letter-spacing: 4px;
+}
+.ReservationList_Title_Find_Table td input {
+    width: 300px;
+    max-width: 300px; /* 예약번호 입력 칸 크기 조정 */
+    height: 60px;
+    padding: 10px;
+    font-size: 1.3em;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* select 박스 스타일 */
+.ReservationList_Title_Find_Table select {
+    width: 300px; /* 길이 늘리기 */
+    max-width: 400px; /* 최대 길이 설정 */
+    height: 60px;
+    padding: 10px;
+    font-size: 1.3em;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.ReservationList_Title_Find_Table select option {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 선택된 옵션 및 hover 시 스타일 */
+.ReservationList_Title_Find_Table select option:hover,
+.ReservationList_Title_Find_Table select option:checked {
+    background-color: rgba(255, 0, 0, 0.7); /* 선택된 항목과 마우스 오버 시 빨간 배경 */
+    color: white; /* 흰색 글씨 */
+}
+
+/* 조회버튼 button 스타일 */
+.ReservationList_Title_Find_Table button {
+    width: 100px;
+    background-color: #660000;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    font-weight: bold;
+}
+.ReservationList_Title_Find_Table button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+.ReservationList_Title_Find_Table button:active {
+    background-color: #cc0000;
+    transform: scale(0.98);
+}
+
+
+/* 리스트 div 스타일 */
+.ReservationList_List_Div {
+    text-align: center;     /* 텍스트 가운데 정렬 */
+    vertical-align: center; /* 세로 가운데 정렬 */
+    border: 1px black;    /* 선 */
+    border-radius: 10px;    /* 선 둥근모서리 */
+    background: rgba(0, 0, 0, 0.8); /* 배경색 */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), inset 0 0 20px rgba(255, 0, 0, 0.7);   /* 박스 스타일 */
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px;
+    overflow: hidden; /* 박스 영역을 벗어난 부분 숨기기 */
+}
+
+/* 리스트 테이블 스타일 */
+.ReservationList_List_Table {
+    width: 100%;
+    table-layout: fixed;        /* 고정된 레이아웃을 적용 */
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    position: relative;
+    overflow-x: auto;           /* 가로 스크롤을 자동으로 추가 */
+    border-bottom: 2px solid rgba(109, 60, 60, 0.6);
+}
+/* 리스트 헤더 스타일 */
+.ReservationList_List_Table th {
+    padding: 15px;
+    color: #f0f0f0;
+    font-size: 1.3em;
+    box-shadow: 0 2px 0 rgba(255, 0, 0, 0.6);
+}
+/* 리스트 셀 스타일 */
+.ReservationList_List_Table td {
+    padding: 15px;
+    color: #f0f0f0;
+    font-size: 1.1em;
+    box-shadow: 0 2px 0 rgba(255, 0, 0, 0.6);
+    white-space: normal;      /* 줄바꿈 허용 */
+    overflow: visible;        /* 내용이 넘칠 때 보이도록 설정 */
+    border-bottom: 2px solid rgba(109, 60, 60, 0.6);
+}
+
+/* 예약관련 button 스타일 */
+.ReservationList_List_Table button {
+    width: 100%;
+    background-color: #660000;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+/* 비활성화 일때 버튼 스타일 */
+.ReservationList_List_Table button:disabled {
+    width: 100%;
+    background-color: #885f5f;
+    color: #dcdcdc;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.7);
+    opacity: 0.4; /* 투명도 적용 */
+    transform: none; /* 버튼 크기 변화 제거 */
+}
+.ReservationList_List_Table button:not(:disabled):hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+.ReservationList_List_Table button:not(:disabled):active {
+    background-color: #cc0000;
+    transform: scale(0.98);
+}
+
+/* 더보기 버튼 스타일 */
+.ReservationList_MoreButton {
+    width: 100px;
+    background-color: #660000;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.ReservationList_MoreButton button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+.ReservationList_MoreButton button:active {
+    background-color: #cc0000;
+    transform: scale(0.98);
+}
