@@ -86,6 +86,7 @@
 ### ⭐기능구현
 #### 예약관리(관리자)
 <img src="https://github.com/user-attachments/assets/83872899-5895-45e6-b642-ddc54ae9c1cc" width="400px" height="300px">
+
 <ul>
   <li>해당 웹 사이트를 통해 이루어지는 모든 예약 데이터 관리</li>
   <li>전체조회/날짜별 조회/결제상태 조회 3가지 조회 기능 구현</li>
@@ -95,6 +96,7 @@
 
 #### 예약내역조회(사용자)
 <img src="https://github.com/user-attachments/assets/8143d2de-8f08-4abc-aa8d-af993a60eeef" width="400px" height="300px">
+
 <ul>
   <li>전체조회/날짜별 조회/예약번호 조회 3가지 조회 기능 구현</li>
   <li>예약 데이터를 출력하여 사용자가 예약 날짜를 쉽게 확인하도록 편의성 제공</li>
